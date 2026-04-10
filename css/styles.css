@@ -268,52 +268,47 @@ footer {
 }
 
 
+
 .about {
   padding: 60px 20px;
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  font-size: 1.1rem; 
+  font-size: 1.1rem;
 }
 
-
+/* TITULO */
 .about .title {
-  font-size: 3.2rem;
+  font-size: 3rem;
   color: #F2C251;
   margin-bottom: 20px;
   font-weight: 800;
   letter-spacing: 1px;
 }
 
+/* INTRO */
 .about .intro {
   max-width: 750px;
   margin: 0 auto 50px;
   line-height: 1.8;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   opacity: 0.95;
 }
 
-
-.about .team {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-}
-
-
-.about .card-about {
+/* CARD About*/
+.card-about {
   background: linear-gradient(145deg, #2a0a45, #1D0530);
   border: 1px solid #8436BD;
   border-radius: 18px;
   padding: 25px;
-  transition: all 0.35s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
   position: relative;
   overflow: hidden;
 }
 
-
-.about .card-about::before {
+/* EFECTO LUZ */
+.card-about::before {
   content: "";
   position: absolute;
   width: 150%;
@@ -322,49 +317,49 @@ footer {
   top: -50%;
   left: -50%;
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
-.about .card-about:hover::before {
+.card-about:hover::before {
   opacity: 1;
 }
 
-
-.about .card-about h2 {
+/* TEXTOS */
+.card-about h2 {
   color: #F2C251;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 5px;
 }
 
-.about .card-about h3 {
+.card-about h3 {
   font-size: 1.1rem;
   margin-bottom: 12px;
   font-weight: 600;
   opacity: 0.9;
 }
 
-.about .card-about p {
-  font-size: 1.05rem;
+.card-about p {
+  font-size: 1rem;
   opacity: 0.9;
 }
 
-.about .card-about span {
+.card-about span {
   display: block;
   margin-top: 15px;
   font-style: italic;
   opacity: 0.8;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
-
-.about .card-about:hover {
-  transform: translateY(-12px) scale(1.04);
-  box-shadow: 0 0 20px rgba(242,194,81,0.5);
+/* HOVER  */
+.card-about:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 0 20px rgba(242,194,81,0.4);
   border-color: #F2C251;
 }
 
-
+/* PURPOSE */
 .about .purpose {
   margin-top: 70px;
   padding-top: 30px;
@@ -373,7 +368,7 @@ footer {
 
 .about .purpose h2 {
   color: #F2C251;
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 15px;
 }
 
@@ -381,23 +376,6 @@ footer {
   max-width: 650px;
   margin: 0 auto;
   line-height: 1.8;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   opacity: 0.95;
-}
-
-
-@media (max-width: 900px) {
-  .about .team {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 500px) {
-  .about .team {
-    grid-template-columns: 1fr;
-  }
-
-  .about .title {
-    font-size: 2.4rem;
-  }
 }
